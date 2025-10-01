@@ -4,6 +4,7 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: stretch;
+  overflow: auto;
 }
 .nav-drawer {
   min-width: min-content;
@@ -18,10 +19,10 @@
   flex-grow: 1;
 }
 .nav-bar-7vij9o {
+  position: relative;
   height: max-content;
   min-width: min-content;
-  flex-grow: 1;
-  flex-basis: 0;
+  align-self: flex-start;
 }
 .navbar-content {
   gap: 1rem;
@@ -86,6 +87,7 @@
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
+  overflow: auto;
   position: relative;
   min-width: 50px;
   min-height: 50px;
