@@ -1,0 +1,192 @@
+<igx-nav-drawer [pin]="true" #navDrawer class="nav-drawer">
+  <ng-template igxDrawer>
+    <div igxDrawerItem igxRipple [routerLink]="['/movies']">
+      <igx-icon class="icon">
+        movie
+      </igx-icon>
+      <span>Movies</span>
+    </div>
+    <div igxDrawerItem igxRipple [routerLink]="['/movie-complex']">
+      <igx-icon class="icon">
+        location_on
+      </igx-icon>
+      <span>Theatres</span>
+    </div>
+    <div igxDrawerItem igxRipple [routerLink]="['/my-purchases']">
+      <igx-icon class="icon">
+        shopping_cart
+      </igx-icon>
+      <span>My Purchases</span>
+    </div>
+    <div igxDrawerItem igxRipple>
+      <igx-icon class="icon">
+        local_offer
+      </igx-icon>
+      <span>Promos</span>
+    </div>
+    <div igxDrawerItem igxRipple>
+      <igx-icon class="icon">
+        help
+      </igx-icon>
+      <span>Help &amp; Support</span>
+    </div>
+    <div igxDrawerItem igxRipple>
+      <igx-icon class="icon">
+        chat_bubble
+      </igx-icon>
+      <span>Contact Us</span>
+    </div>
+  </ng-template>
+</igx-nav-drawer>
+<div class="column-layout group">
+  <div class="row-layout header">
+    <div class="row-layout group_1">
+      <button igxIconButton="flat" igxRipple [igxToggleAction]="navDrawer" class="icon-button">
+        <igx-icon class="icon_1">
+          menu
+        </igx-icon>
+      </button>
+      <p class="ig-typography__subtitle-1 text">
+        MOVIE APP
+      </p>
+    </div>
+    <div class="row-layout group_2">
+      <button igxIconButton="flat" igxRipple class="icon-button_1">
+        <igx-icon class="icon_1">
+          search
+        </igx-icon>
+      </button>
+      <button igxIconButton="flat" igxRipple class="icon-button_1">
+        <igx-icon class="icon_1">
+          favorite
+        </igx-icon>
+      </button>
+      <igx-avatar src="https://d3cg6cexo8t5ug.cloudfront.net/avatars/avatar8.png" shape="circle" [igxToggleAction]="dropdown" class="avatar"></igx-avatar>
+      <igx-drop-down #dropdown class="dropdown">
+        <igx-drop-down-item>
+          My Profile
+        </igx-drop-down-item>
+        <igx-drop-down-item>
+          Logout
+        </igx-drop-down-item>
+      </igx-drop-down>
+    </div>
+  </div>
+  <div class="view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<igx-navbar class="nav-bar-7vij9o">
+  <igx-navbar-action>
+    <button igxIconButton="flat" igxRipple class="icon-button-ng75pa">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      Movie Professional Apps
+    </h6>
+  </igx-navbar-title>
+</igx-navbar>
+<div class="column-layout row-layout-6ynk9">
+  <div class="column-layout row-layout-6ynk9">
+    <p class="title-295n2j">
+      Movie Professional Apps
+    </p>
+    <p class="title-295n2j">
+      Streamline your movie production with our professional apps
+    </p>
+  </div>
+  <div class="grid-layout-2pjl8">
+    <div class="row-layout group_3">
+      <igx-card [elevated]="true" [horizontal]="true" class="card-vthl4">
+        <div class="group_4">
+          <igx-card-header>
+            <h3 igxCardHeaderTitle>
+              Script Manager
+            </h3>
+            <h5 igxCardHeaderSubtitle>
+              Manage your scripts with ease
+            </h5>
+          </igx-card-header>
+          <igx-card-actions class="actions-content">
+            <ng-container igxStart>
+              <button igxButton="contained" type="button" igxRipple class="button-poz2in">
+                <igx-icon>
+                  123
+                </igx-icon>
+                <span>Learn More</span>
+              </button>
+            </ng-container>
+            <ng-container igxEnd></ng-container>
+          </igx-card-actions>
+        </div>
+      </igx-card>
+    </div>
+    <igx-card [elevated]="true" [horizontal]="true" class="card-xmurg2">
+      <div class="group_4">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Shot List
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Create and manage your shot lists
+          </h5>
+        </igx-card-header>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" igxRipple class="button-poz2in">
+              <igx-icon>
+                123
+              </igx-icon>
+              <span>Learn More</span>
+            </button>
+          </ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </div>
+    </igx-card>
+    <igx-card [elevated]="true" [horizontal]="true" class="card-xmurg2">
+      <div class="group_4">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Storyboard
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Create and manage your storyboards
+          </h5>
+        </igx-card-header>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" igxRipple class="button-poz2in">
+              Learn More
+            </button>
+          </ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </div>
+    </igx-card>
+    <igx-card [elevated]="true" [horizontal]="true" class="card-xmurg2">
+      <div class="group_4">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Scheduling
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Manage your shoot schedules
+          </h5>
+        </igx-card-header>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" igxRipple class="button-poz2in">
+              Learn More
+            </button>
+          </ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </div>
+    </igx-card>
+  </div>
+</div>
